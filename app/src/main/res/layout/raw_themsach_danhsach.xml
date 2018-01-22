@@ -1,0 +1,69 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:id="@+id/txt_themsach_mssach"
+            android:background="@drawable/cell_shape"
+            android:padding="10sp"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+        </TextView>
+        <TextView
+            android:background="@drawable/cell_shape"
+            android:id="@+id/txt_themsach_tensach"
+            android:padding="10sp"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+        </TextView>
+        <TextView
+            android:background="@drawable/cell_shape"
+            android:id="@+id/txt_themsach_tacgia"
+            android:padding="10sp"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+        </TextView>
+        <TextView
+            android:background="@drawable/cell_shape"
+            android:id="@+id/txt_themsach_loaisach"
+            android:padding="10sp"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+        </TextView>
+        <TextView
+            android:background="@drawable/cell_shape"
+            android:id="@+id/txt_themsach_soluong"
+            android:padding="10sp"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </TextView>
+
+    </TableRow>
+
+
+</TableLayout>

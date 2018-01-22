@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/manage">
+        <menu>
+            <item
+                android:id="@+id/nav_ql_danhmuc"
+                android:icon="@drawable/ic_menu_book"
+                android:title="@string/txt_qldanhmuc" />
+            <item
+                android:id="@+id/nav_ql_muontra"
+                android:icon="@drawable/ic_menu_update"
+                android:title="@string/txt_qlimtsach" />
+            <item
+                android:id="@+id/nav_ql_baocao"
+                android:icon="@drawable/ic_menu_report"
+                android:title="@string/txt_baocaotk" />
+            <item
+                android:id="@+id/nav_ql_nhanvien"
+                android:icon="@drawable/ic_menu_user"
+                android:title="@string/txt_nhanvien" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#ff80d8ff"
+
+    >
+    <TextView
+        android:id="@+id/lblThongTinNhaXB"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="4dp"
+        android:background="#ff40c4ff"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <ScrollView
+        android:layout_weight="6"
+        android:id="@+id/scrollView_nhaxb"
+        android:layout_below="@+id/lblThongTinNhaXB"
+        android:layout_above="@+id/linearLayoutBtnsNhaXB"
+        android:layout_height="100px"
+        android:layout_width="match_parent">
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="#ff80d8ff">
+            <!--Tittle-->
+
+            <!--Ma doc gia-->
+            <TextView
+                android:id="@+id/lblMaNhaXB"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Mã nhà xb"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/txtMaNhaXB"
+                android:layout_below="@+id/lblMaNhaXB"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+            <!--Ten doc gia-->
+            <TextView
+                android:id="@+id/lblTenNhaXB"
+                android:layout_below="@+id/txtMaNhaXB"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Tên nhà xb"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtTenNhaXB"
+                android:layout_below="@+id/lblTenNhaXB"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+            <!--Dia chi-->
+            <TextView
+                android:id="@+id/lblDiaChiNhaXB"
+                android:layout_below="@+id/txtTenNhaXB"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Địa chỉ"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtDiaChiNhaXB"
+                android:layout_below="@+id/lblDiaChiNhaXB"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+            <!--website-->
+            <TextView
+                android:id="@+id/lblWebsiteNhaXB"
+                android:layout_below="@+id/txtDiaChiNhaXB"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Website"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtWebsiteNhaXB"
+                android:layout_below="@+id/lblWebsiteNhaXB"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+            <!--Thong tin khac-->
+            <TextView
+                android:id="@+id/lblThongTinKhacNhaXB"
+                android:layout_below="@+id/txtWebsiteNhaXB"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Thông tin khác"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtThongTinKhacNhaXB"
+                android:layout_below="@+id/lblThongTinKhacNhaXB"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+
+            
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <!--Thong bao-->
+    <TextView
+        android:id="@+id/txt_nhaxb_thongbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView_nhaxb"
+        android:gravity="center"
+        android:textColor="@color/red">
+
+    </TextView>
+    <LinearLayout
+
+        android:id="@+id/linearLayoutBtnsNhaXB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="4"
+
+        >
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnThemNhaXB"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Thêm"
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_them"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnSuaNhaXB"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:text="Sửa "
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_sua"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnXoaNhaXB"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Xóa "
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_xoa"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnHuyNhaXB"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Hủy"
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_huy"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+</RelativeLayout>

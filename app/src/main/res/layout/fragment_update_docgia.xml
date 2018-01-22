@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_tuychon_docgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_more" />
+
+    <LinearLayout
+        android:layout_margin="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/selector_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/txt_docgia_timkiem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search"
+                android:paddingLeft="20px"/>
+
+
+        </LinearLayout>
+
+
+
+       <Spinner
+           android:id="@+id/spin_timkiem"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp"
+           >
+
+       </Spinner>
+        <TextView
+            android:id="@+id/txtTongDocGia"
+            android:layout_height="25dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:typeface="sans"/>
+        <ListView
+            android:id="@+id/lv_docgia_danhsach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

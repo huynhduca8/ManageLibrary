@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#ff80d8ff"
+    android:layout_margin="5dp"
+
+    >
+
+    <TextView
+        android:id="@+id/lblThongTinThemSach"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="22dp"
+        android:text="Chọn sách cần mượn"
+        android:textColor="#FFFFFF"
+        android:paddingTop="4dp"
+        android:background="#ff40c4ff"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/txt_themsach_timkiem"
+        android:layout_below="@+id/lblThongTinThemSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="@string/search"
+        android:textSize="17dp"
+        android:padding="5dp"
+        android:paddingLeft="20px"/>
+    <Spinner
+        android:id="@+id/spin_themsach_timkiem"
+        android:layout_below="@+id/txt_themsach_timkiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+
+
+        >
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/lbTongSach"
+        android:layout_below="@+id/spin_themsach_timkiem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:text="Tổng sach 0"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:typeface="sans" />
+    <include
+        android:id="@+id/la"
+        layout="@layout/header_dsmuon_themsach"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbTongSach"/>
+
+
+    <ScrollView
+        android:id="@+id/scrollView_themsach"
+        android:layout_below="@+id/la"
+        android:layout_height="0dp"
+        android:layout_above="@+id/linearLayoutNgayTra"
+        android:fillViewport="true"
+        android:layout_width="match_parent">
+
+        <ListView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/lv_themsach"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearLayoutNgayTra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayoutBtnsThemSach"
+        android:orientation="vertical">
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/txt_themsach_ngaytra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:hint="Ngày trả"
+            android:textSize="17dp"
+            android:padding="5dp"
+            android:paddingLeft="20px"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayoutBtnsThemSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:padding="10px"
+
+            android:id="@+id/btn_dsmuon_huysach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Trở về"
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_huy"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+</RelativeLayout>

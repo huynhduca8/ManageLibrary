@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#ff80d8ff"
+
+    >
+    <TextView
+        android:id="@+id/lblThongTinQuyenSach"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="4dp"
+        android:background="#ff40c4ff"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <ScrollView
+        android:layout_weight="6"
+        android:id="@+id/scrollView_quyensach"
+        android:layout_below="@+id/lblThongTinQuyenSach"
+        android:layout_above="@+id/linearLayoutBtnsQuyenSach"
+        android:layout_height="100px"
+        android:layout_width="match_parent">
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="#ff80d8ff">
+            <!--Tittle-->
+
+            <!--Ma sach-->
+            <TextView
+                android:id="@+id/lblMaQuyenSach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Mã sách"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/txtMaQuyenSach"
+                android:layout_below="@+id/lblMaQuyenSach"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+            <!--Ten -->
+            <TextView
+                android:id="@+id/lblTenQuyenSach"
+                android:layout_below="@+id/txtMaQuyenSach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Tên sách"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtTenQuyenSach"
+                android:layout_below="@+id/lblTenQuyenSach"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+            <!--Tac gia-->
+            <TextView
+                android:id="@+id/lblTacGiaQuyenSach"
+                android:layout_below="@+id/txtTenQuyenSach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Tác giả"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtTacGiaQuyenSach"
+                android:layout_below="@+id/lblTacGiaQuyenSach"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+            <!--mã nxb -->
+            <TextView
+                android:id="@+id/lblMaNXBQuyenSach"
+                android:layout_below="@+id/txtTacGiaQuyenSach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Mã NXB "
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <Spinner
+                android:id="@+id/txtMaNXBQuyenSach"
+                android:layout_below="@+id/lblMaNXBQuyenSach"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+            <!--Mã loại sách-->
+            <TextView
+                android:id="@+id/lblMaLoaiSachQuyenSach"
+                android:layout_below="@+id/txtMaNXBQuyenSach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Mã loại sách"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <Spinner
+                android:id="@+id/txtMaLoaiSachQuyenSach"
+                android:layout_below="@+id/lblMaLoaiSachQuyenSach"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+
+
+            <!--Nam XB -->
+
+            <TextView
+                android:id="@+id/lblNamXBQuyenSach"
+                android:layout_below="@+id/txtMaLoaiSachQuyenSach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Năm XB"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtNamXBQuyenSach"
+                android:layout_below="@+id/lblNamXBQuyenSach"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+
+
+
+
+
+            <!--Lan XB -->
+
+            <TextView
+                android:id="@+id/lblLanXBQuyenSach"
+                android:layout_below="@+id/txtNamXBQuyenSach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Lần XB"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtLanXBQuyenSach"
+                android:layout_below="@+id/lblLanXBQuyenSach"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+
+
+
+
+
+
+
+
+
+            <!--so luong -->
+
+            <TextView
+                android:id="@+id/lblSoLuongQuyenSach"
+                android:layout_below="@+id/txtLanXBQuyenSach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Số lượng"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtSoLuongQuyenSach"
+                android:layout_below="@+id/lblSoLuongQuyenSach"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+
+
+
+
+
+
+
+
+
+            <!--Tom luoc -->
+
+            <TextView
+                android:id="@+id/lblTomLuocQuyenSach"
+                android:layout_below="@+id/txtSoLuongQuyenSach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Tóm lược"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txtTomLuocQuyenSach"
+                android:layout_below="@+id/lblTomLuocQuyenSach"
+                android:layout_height="28dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans"
+                android:layout_marginRight="20dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <!--Thong bao-->
+    <TextView
+        android:id="@+id/txt_quyensach_thongbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView_quyensach"
+        android:gravity="center"
+        android:textColor="@color/red"/>
+    <LinearLayout
+
+        android:id="@+id/linearLayoutBtnsQuyenSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="4"
+
+        >
+
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnThemQuyenSach"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Thêm"
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_them"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnSuaQuyenSach"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:text="Sửa "
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_sua"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnXoaQuyenSach"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Xóa "
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_xoa"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnHuyQuyenSach"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Hủy"
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_huy"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+</RelativeLayout>

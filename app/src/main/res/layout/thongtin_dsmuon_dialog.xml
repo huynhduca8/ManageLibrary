@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#ff80d8ff"
+
+    >
+    <TextView
+        android:id="@+id/lblThongTinDSMuon"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="4dp"
+        android:background="#ff40c4ff"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <ScrollView
+        android:id="@+id/li"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lblThongTinDSMuon"
+        android:layout_above="@id/linearLayoutBtnsDSMuon"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="7">
+            <TextView
+                android:layout_height="28dp"
+                android:layout_width="0dp"
+                android:paddingTop="5px"
+                android:layout_weight="2"
+                android:text="Mã số phiếu"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/spin_dsmuon_msphieu"
+                android:layout_height="28dp"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="14dp"
+                android:paddingBottom="1dp"
+                android:typeface="sans" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="7">
+            <TextView
+                android:layout_height="28dp"
+                android:layout_width="0dp"
+                android:paddingTop="5px"
+                android:layout_weight="2"
+                android:text="Độc giả"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:typeface="sans" />
+            <Spinner
+                android:id="@+id/spin_dsmuon_msdocgia"
+                android:layout_height="28dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="16dp"
+                android:paddingBottom="1dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/txt_dsmuon_tendocgia"
+                android:layout_height="28dp"
+                android:layout_width="0dp"
+                android:paddingTop="5px"
+                android:paddingLeft="10dp"
+                android:layout_weight="3"
+                android:text="Lưu Huỳnh Đức "
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="7">
+            <TextView
+                android:layout_height="28dp"
+                android:layout_width="0dp"
+                android:paddingTop="5px"
+                android:layout_weight="2"
+                android:text="Nhân viên"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:typeface="sans" />
+            <Spinner
+                android:id="@+id/spin_dsmuon_msnhanvien"
+                android:layout_height="28dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="16dp"
+                android:paddingBottom="1dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/txt_dsmuon_tennhanvien"
+                android:layout_height="28dp"
+                android:layout_width="0dp"
+                android:paddingTop="5px"
+                android:paddingLeft="10dp"
+                android:layout_weight="3"
+                android:text="Lưu Huỳnh Đức "
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="7">
+            <TextView
+                android:layout_height="28dp"
+                android:layout_width="0dp"
+                android:paddingTop="5px"
+                android:layout_weight="2"
+                android:text="Ngày mượn"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/txt_dsmuon_ngaymuon"
+                android:layout_height="28dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="16dp"
+                android:paddingBottom="1dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/txt_dsmuon_theoma_tongbanghi"
+                android:layout_height="28dp"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:text="Tổng bản ghi"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:paddingBottom="1dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ib_dsmuon_themsach"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:background="#ff80d8ff"
+                    android:src="@drawable/ic_danhmuc_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/header_dsmuon_danhsachphieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+        </include>
+        <ListView
+            android:id="@+id/lv_dsmuon_danhsachphieu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+
+            ></ListView>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <!--Thong bao-->
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/txt_dsmuon_thongbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/li"
+        android:textColor="@color/red"/>
+    <LinearLayout
+        android:id="@+id/linearLayoutBtnsDSMuon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="4"
+
+        >
+
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnThemDSMuon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Thêm"
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_them"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnSuaDSMuon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:text="Sửa "
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_sua"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnXoaDSMuon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Xóa "
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_xoa"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:padding="10px"
+            android:id="@+id/btnHuyDSMuon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Hủy"
+            android:paddingLeft="20px"
+            android:drawableLeft="@drawable/ic_danhmuc_huy"
+            android:typeface="sans"
+            android:background="@drawable/click_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quản lý thư viện</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="manage">Quản lý</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_qldanhmuc">Quản lí danh mục </string>
+    <string name="txt_qlimtsach">Quản lí mượn trả sách </string>
+    <string name="txt_baocaotk">Báo cáo- Thống kê </string>
+    <string name="txt_nhanvien">Nhân viên </string>
+    <string name="search">Tìm kiếm </string>
+</resources>
